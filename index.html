@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Govinda Goutham | Portfolio</title>
+<meta name="description" content="Govinda Goutham — Engineering Student, Developer and Builder.">
+<meta name="author" content="Govinda Goutham">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+
+<header class="header">
+  <a href="#home" class="logo">Goutham</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="nav-link active">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="theme-switch">
+    <input type="checkbox" id="themeToggle">
+    <label for="themeToggle" class="switch-label">
+        <span class="switch-icon sun">☀️</span>
+        <span class="switch-icon moon">🌙</span>
+        <span class="switch-slider"></span>
+    </label>
+</div>
+  <a href="#contact" class="btn nav-button">Let's Talk</a>
+</header>
+
+<div class="content">
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="chip">HELLO, I'M</p>
+    <h1>Govinda <span>Goutham</span></h1>
+    <h2>Engineering Student &amp; <span>Developer</span></h2>
+    <p class="hero-description">I build practical solutions using code, electronics and modern web technologies — turning ideas into functional projects.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View My Projects <span>→</span></a>
+      <a href="525CS0013_Resume.docx" class="btn" target="_blank">Download Resume <span>↓</span></a>
+    </div>
+  </div>
+  <div class="code-window">
+    <div class="window-header"><div class="window-buttons"><span></span><span></span><span></span></div><p>developer.js</p></div>
+    <div class="code-content">
+      <p><span class="c-purple">const</span> developer <span class="c-ink">=</span> <span class="c-blue">{</span></p>
+      <p class="i1">name: <span class="c-green">"Govinda Goutham"</span>,</p>
+      <p class="i1">role: <span class="c-green">"Student"</span>,</p>
+      <p class="i1">skills: <span class="c-blue">[</span></p>
+      <p class="i2"><span class="c-green">"HTML"</span>,</p>
+      <p class="i2"><span class="c-green">"CSS"</span>,</p>
+      <p class="i2"><span class="c-green">"JavaScript"</span>,</p>
+      <p class="i2"><span class="c-green">"C / C++"</span>,</p>
+      <p class="i2"><span class="c-green">"Python"</span>,</p>
+      <p class="i2"><span class="c-green">"Arduino"</span></p>
+      <p class="i1"><span class="c-blue">]</span>,</p>
+      <p class="i1">learning: <span class="c-green">"Always"</span></p>
+      <p><span class="c-blue">}</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="section-heading">
+    <p class="chip">01 / ABOUT ME</p>
+    <h2>A little bit <span>about me.</span></h2>
+  </div>
+  <div class="about-grid">
+    <div class="image-frame">
+    <img src="images/1.jpeg" alt="Govinda Goutham" class="about-image">
+    </div>
+    <div class="about-content">
+      <h3>Engineering student. <span>Problem solver.</span> </h3>
+      <p>I'm an engineering student at <strong>IIITDM Kurnool</strong> with an interest in software development, electronics and emerging technologies.</p>
+      <p>I enjoy taking an idea, understanding the problem behind it, and building something functional from scratch.</p>
+      <p>From Arduino-based systems and RISC-V programs to modern web applications, I like exploring different areas of technology and learning by actually building things.</p>
+      <div class="about-stats">
+        <div class="stat"><h4>01+</h4><p>Hardware Project</p></div>
+        <div class="stat"><h4>05+</h4><p>Technologies</p></div>
+        <div class="stat"><h4>∞</h4><p>Ideas to Build</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section skills" id="skills">
+  <div class="section-heading">
+    <p class="chip">02 / SKILLS</p>
+    <h2>Tools I use to <span>build things.</span></h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">&lt;/&gt;</div>
+      <h3>Web Development</h3>
+      <p>Creating responsive and interactive websites using modern frontend technologies.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">{ }</div>
+      <h3>Programming</h3>
+      <p>Developing logical solutions and implementing algorithms through code.</p>
+      <div class="tags"><span>C</span><span>C++</span><span>Python</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⚡</div>
+      <h3>Hardware &amp; IoT</h3>
+      <p>Building sensor-based systems and experimenting with microcontrollers.</p>
+      <div class="tags"><span>Arduino</span><span>IR Sensors</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⚙</div>
+      <h3>Tools &amp; Workflow</h3>
+      <p>Using modern development tools to build, debug and manage projects.</p>
+      <div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section projects" id="projects">
+  <div class="section-heading project-heading">
+    <div>
+      <p class="chip">03 / PROJECTS</p>
+      <h2>Things I've <span>built.</span></h2>
+    </div>
+    <p class="section-description">A selection of projects I've worked on while learning and experimenting with technology.</p>
+  </div>
+  <div class="projects-grid">
+    <article class="project-card">
+      <div class="project-image parking"><span class="chip">Arduino</span><b class="project-number">01</b></div>
+      <div class="project-content">
+        <div class="project-top"><span class="project-type">HARDWARE / EMBEDDED</span></div>
+        <h3>Smart Parking Lot Counter</h3>
+        <p>An Arduino-based vehicle counting system using two IR sensors to detect vehicle entry and exit and maintain the current parking count.</p>
+        <div class="tags"><span>Arduino</span><span>C/C++</span><span>IR Sensors</span><span>Transistors</span></div>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-image live"><span class="chip">Live Site</span><b class="project-number">02</b></div>
+      <div class="project-content">
+        <div class="project-top"><span class="project-type">WEB / DEPLOYED</span><a href="https://dpy-complex.onrender.com/" class="project-link" target="_blank" rel="noopener" aria-label="Visit the live DPY Complex website">↗</a></div>
+        <h3>DPY Complex</h3>
+        <p>A fully developed and deployed web application, built to deliver a responsive, user-friendly experience with a functional backend and live data integration.<br>Explore the live website to see the project in action.</p>
+        <div class="tags"><span>Web</span><span>Live Database</span><span>Deployed</span></div>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-image web"><span class="chip">Web</span><b class="project-number">03</b></div>
+      <div class="project-content">
+        <div class="project-top"><span class="project-type">WEB DEVELOPMENT</span><a href="#" class="project-link" aria-label="View portfolio project">↗</a></div>
+        <h3>Personal Portfolio</h3>
+        <p>A responsive personal portfolio designed and developed from scratch using HTML, CSS and JavaScript.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-image future"><span class="chip">More Soon</span><b class="project-number">04</b></div>
+      <div class="project-content">
+        <div class="project-top"><span class="project-type">UPCOMING</span></div>
+        <h3>More Projects Coming</h3>
+        <p>Currently exploring new ideas and technologies to turn into practical projects.</p>
+        <div class="tags"><span>Learning</span><span>Building</span><span>Experimenting</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section education" id="education">
+  <div class="section-heading">
+    <p class="chip">04 / EDUCATION</p>
+    <h2>My academic <span>journey.</span></h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">PRESENT</div>
+      <div class="timeline-content">
+        <h3>IIITDM Kurnool</h3><h4>Engineering</h4>
+        <p>Currently pursuing engineering with coursework spanning computer science, electronics, mathematics and engineering fundamentals.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">PAST</div>
+      <div class="timeline-content">
+        <h3>Higher Secondary Education</h3><h4>Science &amp; Mathematics</h4>
+        <p>Built a strong foundation in mathematics, physics and problem solving.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="learning-section">
+  <div class="learning-card">
+    <div>
+      <p class="chip">CURRENTLY LEARNING</p>
+      <h2>Always building. <span>Always learning.</span></h2>
+    </div>
+    <div class="learning-list">
+      <span>AI/ML</span><span>Web Development</span><span>OOPS</span><span>Digital Logic Design</span><span>Data Structures &amp; Algorithems</span>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-text">
+      <p class="chip">05 / CONTACT</p>
+      <h2>Have an idea? <span>Let's build it.</span></h2>
+      <p>Whether it's a project, internship opportunity, collaboration or simply a conversation about technology — feel free to reach out.</p>
+      <div class="contact-details">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=govindagoutham86%40gmail.com&su=Portfolio%20Enquiry" target="_blank" rel="noopener noreferrer"><span>Email - Personal</span>govindagoutham86@gmail.com</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=govindagoutham8790%40gmail.com&su=Portfolio%20Enquiry" target="_blank" rel="noopener noreferrer"><span>Email - Work</span>govindagoutham8790@gmail.com</a>
+        <a href="https://github.com/govindagoutham86" target="_blank" rel="noopener"><span>GitHub</span>github.com/govindagoutham86</a>
+        <a href="https://www.linkedin.com/in/govindagoutham" target="_blank" rel="noopener"><span>LinkedIn</span>linkedin.com/in/govindagoutham</a>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Tell me about your idea..." required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message <span>→</span></button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <a href="#home" class="logo">Goutham</a>
+  <p>Designed &amp; built by  D. Govinda Goutham.</p>
+  <p>© <span id="currentYear"></span> All rights reserved.</p>
+</footer>
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
