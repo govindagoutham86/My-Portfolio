@@ -92,7 +92,7 @@ const roles = [
     "Developer",
     "Problem Solver",
     "Builder",
-    "Engineering Student",
+   "Cinephile",
     "Tech Enthusiast"
 ];
 
