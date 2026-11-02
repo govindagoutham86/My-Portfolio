@@ -85,48 +85,56 @@ if (menuToggle && navLinks) {
    word inside the hero subtitle.
    ========================================================= */
 
-const typingText =
-    $("typingText") || document.querySelector(".hero h2 span");
 
-const roles = [
-    "Developer",
-    "Problem Solver",
-    "Builder",
-   "Cinephile",
-    "Tech Enthusiast"
-];
+document.addEventListener("DOMContentLoaded", () => {
+    const typingText = document.getElementById("typingText");
 
-let roleIndex = 0;
-let characterIndex = 0;
-let isDeleting = false;
-
-function typeRole() {
-    const role = roles[roleIndex];
-
-    characterIndex += isDeleting ? -1 : 1;
-    typingText.textContent = role.substring(0, characterIndex);
-
-    if (!isDeleting && characterIndex === role.length) {
-        isDeleting = true;
-        setTimeout(typeRole, 1600);
+    if (!typingText) {
+        console.error("Element #typingText was not found.");
         return;
     }
 
-    if (isDeleting && characterIndex === 0) {
-        isDeleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
+    const roles = [
+        "Developer",
+        "Problem Solver",
+        "Builder",
+        "Cinephile",
+        "Tech Enthusiast"
+    ];
+
+    let roleIndex = 0;
+    let charIndex = roles[0].length;
+    let deleting = true;
+
+    function typeRole() {
+        const currentRole = roles[roleIndex];
+
+        if (deleting) {
+            charIndex--;
+            typingText.textContent = currentRole.substring(0, charIndex);
+
+            if (charIndex <= 0) {
+                deleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+            }
+
+            setTimeout(typeRole, 65);
+        } else {
+            const nextRole = roles[roleIndex];
+            charIndex++;
+            typingText.textContent = nextRole.substring(0, charIndex);
+
+            if (charIndex >= nextRole.length) {
+                deleting = true;
+                setTimeout(typeRole, 1400);
+            } else {
+                setTimeout(typeRole, 100);
+            }
+        }
     }
 
-    setTimeout(typeRole, isDeleting ? 45 : 90);
-}
-
-const prefersReducedMotion =
-    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-if (typingText && !prefersReducedMotion) {
-    typingText.textContent = "";
-    typeRole();
-}
+    setTimeout(typeRole, 1400);
+});
 
 
 /* =========================================================
