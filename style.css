@@ -198,7 +198,7 @@ h2 span, h3 span, h1 span { font-style: italic; color: var(--accent-text); }
 .hero h2 span { font-style: normal; color: var(--accent-text); font-weight: 600; }
 @keyframes blink { 50% { opacity: 0; } }
 /* typing caret: appears once the role span has id="typingText" */
-#typingText::after { content: "|"; margin-left: 2px; font-weight: 300; animation: blink 1s steps(1) infinite; }
+//#typingText::after { content: "|"; margin-left: 2px; font-weight: 300; animation: blink 1s steps(1) infinite; }
 .hero-description { max-width: 50ch; color: var(--muted); margin-bottom: 34px; }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
 
